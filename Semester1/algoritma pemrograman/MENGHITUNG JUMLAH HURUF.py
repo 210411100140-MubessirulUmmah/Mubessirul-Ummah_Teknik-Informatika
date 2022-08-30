@@ -1,0 +1,5 @@
+kata = str(input("masukkan kata : "))
+karakter = int(input("karakter awal N ke : "))
+karakter_akhir = int(input("karakter akhir N ke : "))
+print ("karakter awal dari kata yang anda cari : ", kata[0:karakter])
+print ("karakter akhir dari kata yang anda cari : ", kata[(karakter_akhir-1):-1]+[-1])
