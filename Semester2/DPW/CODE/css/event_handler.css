@@ -1,0 +1,45 @@
+td {
+    text-align: center;
+    padding: 5px;
+    border: none;
+}
+input[type=text]{
+    padding: 10px;
+    width: 410px;
+    border-style: solid;
+    text-align: right;
+    font-size: 16px;
+}
+input[type=text]:disabled{
+    background-color: white;
+}
+.btn1 {
+    width: 100px;
+    height: 40px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn2 {
+    width: 100px;
+    height: 40px;
+    background-color: #6c25c9;
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.judul {
+    width: 100px;
+    height: 40px;
+    background-color: none;
+    background-color: #25c3c9;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Event Handler</title>
+    <link rel="stylesheet" href="css/event_handler.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="3"><h1 id="nama" onmouseover="mampir()" onmouseout="jauh()">Triple-C</h1></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <input type="text" disabled id="activity" value="Belum ada">
+            </td>
+        </tr>
+        <tr>
+            <td class="judul">Warna</td>
+            <td class="judul">Font Style</td>
+            <td class="judul">Ukuran</td>
+        </tr>
+        <tr>
+            <td class="btn1" onclick="warna_before()">Previous</td>
+            <td class="btn1" onclick="font_before()">Previous</td>
+            <td class="btn1" onclick="ukuran_min()">-</td>
+        </tr>
+        <tr>
+            <td class="btn2" onclick="warna_next()">Next</td>
+            <td class="btn2" onclick="font_next()">Next</td>
+            <td class="btn2" onclick="ukuran_plus()">+</td>
+        </tr>
+    </table>
+    <script type="text/Javascript" src="js/event_handler.js"></script>
+</body>
+</html>

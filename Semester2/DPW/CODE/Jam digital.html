@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jam Digital Dengan Javascript</title>
+
+    <style>
+        h1,h2,p,a{
+            font-family: sans-serif;
+            font-weight: normal;
+        }
+    
+        .jam-digital{
+            overflow: hidden;
+            width: 330px;
+            margin: 20px auto;
+            border: 5px solid #efefef;
+        }
+        .kotak{
+            float: left;
+            width: 110px;
+            height: 100px;
+            background-color: #5927da;
+        }
+        .jam-digital p {
+            color: rgb(255, 255, 255);
+            font-size: 36px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        </style>
+</head>
+<body>
+    <center>
+        <h1>Jam Digital Dengan Javascript</h1>
+    </center>
+    <div class="jam-digital">
+        <div class="kotak">
+            <p id="jam"></p>
+        </div>
+        <div class="kotak">
+            <p id="menit"></p>
+        </div>
+        <div class="kotak">
+            <p id="detik"></p>
+        </div>
+    </div>
+    <script>
+        window.setTimeout("waktu()", 1000);
+        function waktu() {
+            var waktu = new Date();
+            setTimeout("waktu()", 1000);
+            document.getElementById("jam").innerHTML = waktu.getHours();
+            document.getElementById("menit").innerHTML = waktu.getMinutes();
+            document.getElementById("detik").innerHTML = waktu.getSeconds();
+            document.getElementById("hari").innerHTML = waktu.getDay();
+            document.getElementById("tanggal").innerHTML = waktu.getDate();
+            document.getElementById("bulan").innerHTML = waktu.getMonth();
+            document.getElementById("tahun").innerHTML = waktu.getFullYear();
+        }
+    </script>
+</body>
+</html>
