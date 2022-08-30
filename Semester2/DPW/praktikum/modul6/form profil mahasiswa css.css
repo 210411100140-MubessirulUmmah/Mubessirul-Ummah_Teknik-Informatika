@@ -1,0 +1,189 @@
+body{
+    background-color: beige;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+table{
+    margin: auto;
+}
+
+fieldset{
+    margin: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: grid;
+    width:fit-content;
+    border-radius: 20px;
+    border: 2px rgb(241, 241, 190);
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    background-color:rgb(241, 241, 190);
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+}
+
+
+#lastname_errortampil{
+    display: inline;
+    margin-left: 5px;
+    color: red;
+}
+#firstname_errortampil{
+    display: inline;
+    margin-left: 5px;
+    color: red;
+}
+#gender_errortampil{
+    display: inline;
+    margin-left: 80px;
+    color: red;
+}
+#birth_errortampil{
+    display: inline;
+    margin-left: 65px;
+    color: red;
+}
+#email_errortampil{
+    display: inline;
+    margin-left: 5px;
+    color: red;
+}
+#nohp_errortampil{
+    display: inline;
+    margin-left: 5px;
+    color: red;
+}
+#adress_errortampil{
+    display: inline;
+    margin-left: 5px;
+    color: red;
+}
+u{
+    color: blue;
+}
+h1{
+    color: rgb(14, 34, 46);
+    text-shadow:0px -1px 3px rgb(255, 255, 255) ;
+    background-color:darkkhaki;
+    border-radius: 10px;
+    padding: 2px;
+    font-size: 30px;
+    font-weight:bolder;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+.penunjuk p{
+    margin-bottom: -15px;
+}
+#gender{
+    margin-left: 10px;
+}
+
+.atur{
+    margin-bottom: 10px;
+}
+.grid{
+    margin-top: 40px;
+}
+
+.atur{
+    position: relative;
+}
+.atur label{
+    font-size: 1rem;
+    color: rgb(24, 41, 41);
+    font-family: Perpetua;
+    margin-right: 10px;
+}
+.label::before{
+    margin-right: 50px;
+}
+.label1::after{
+    content: ":";
+    margin-left: 15px;
+}
+.label2::after{
+    content: ":";
+    margin-left: 18px;
+}
+.label3::after{
+    content: ":";
+    margin-left: 5px;
+}
+.label4::after{
+    content: ":";
+    margin-left: 22px;
+}
+.label5::after{
+    content: ":";
+    margin-left: 47px;
+}
+.label6::after{
+    content: ":";
+    margin-left: 28px;
+}
+.label7::after{
+    content: ":";
+    margin-left: 41px;
+}
+.label4 img{
+    width: 15px;
+    height: 15px;
+}
+
+.labelmale img{
+    width: 15px;
+    height: 15px;
+}
+
+.labelfemale img{
+    width: 15px;
+    height: 15px;
+}
+
+.simpan{
+    text-align: center;
+}
+.simpan input{
+    color: white;
+    background-color: #CB6CE6;
+    border: 1px solid #CB6CE6;
+    padding: 2px 5px;
+    border-radius: 10px;
+    width: 100px;
+    outline: 1.9px solid #CB6CE6;
+    outline-offset: 0.2rem;
+}
+
+h4{
+    background-color: rgb(247, 222, 238);
+    border-radius: 20px;
+    padding: 20px;
+    display: block;
+    margin: auto;
+    color: rgb(24, 41, 41);
+    font-family: Perpetua;
+    font-weight: 500;
+    border-radius: 20px;
+    border: 2px solid #CB6CE6;
+    box-shadow: 0px 0px 30px rgb(0, 0, 0);
+    outline: 2px solid #CB6CE6;
+    outline-offset: 0.3rem;
+}
+
+input{
+    border-radius: 10px;
+}
+select{
+    border-radius: 10px;
+    background-color:white;
+    width: 60px;
+    color: rgb(114, 114, 114);
+    border: 1px solid darkgray;
+}
+input[type="text"]{
+    background-color:white;
+    padding: 5px;
+    border: 1px darkgrey solid;
+}
