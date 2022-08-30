@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+	<title>Teks Jam Digital</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <img class="gambar" src="icon-jam.png" alt="jam">
+        </div>
+        <div class="content">
+            <div class="item"><p id="jam"></p></div>
+            <div class="item"><p id="menit"></p></div>
+            <div class="item-c"><p id="convert"></p></div>
+        </div>
+        <div class="copyright"><p>created by @syayidalaziz_</p></div>
+    </div>
+
+
+
+
+
+
+
+
+
+<!--Script Javasript Konversi Jam Digital menjadi Teks-->
+<script>
+    function startTime() {
+    var today = new Date();
+    setTimeout(startTime,1000);
+    var h = today.getHours();
+    var m = today.getMinutes();
+    document.getElementById('jam').innerHTML = h
+    document.getElementById('menit').innerHTML = m
+    document.getElementById('convert').innerHTML = ("Jam " + convertHourToName(h) + " Lebih " + convertNumberToName(m) + " Menit");
+    
+}
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+} 
+
+function convertHourToName(num) {
+    if (num > 12) {
+        num -= 12;
+    }
+    return convertNumberToName(num);
+}
+function convertNumberToName(num) {
+    var lowNames =  ["Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh",
+                    "Sebelas", "Dua Belas", "Tiga Belas", "Empat Belas", "Lima Belas", "Enam Belas", "Tujuh Belas", "Delapan Belas", "Sembilan Belas"];
+    var tensNames = ["Dua Puluh", "Tiga Puluh", "Empat Puluh", "Lima Puluh", "Enam Puluh", "Tujuh Puluh", "Delapan Puluh", "Sembilan Puluh"];
+    var tens, ones, result;
+    if (num < lowNames.length) {
+        result = lowNames[num];
+    } else {
+        tens = Math.floor(num / 10);
+        ones = num % 10;
+        if (tens <= 9) {
+            result = tensNames[tens - 2];
+            if (ones > 0) {
+                result += " " + lowNames[ones];
+            }
+        } else {
+            result = "unknown"
+        }
+    }
+    return result;
+}
+
+startTime();
+</script>
+<!--Script Javasript Konversi Jam Digital menjadi Teks-->
+</body>
+</html>

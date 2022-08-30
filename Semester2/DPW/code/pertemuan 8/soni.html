@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Son`s Web</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Diplomata+SC&family=Holtwood+One+SC&family=Russo+One&family=Stalinist+One&family=Vast+Shadow&display=swap');
+        html{
+            cursor: all-scroll;
+        }
+        body{
+            background: linear-gradient(to right,#0a0a00,#2b2b29);
+        }
+        #jamku{
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translateX(-50%) translateY(-50%);
+            color:gold;
+            font-size: 30px;
+            box-shadow: 1px 1px 5px;
+            padding: 0px 5px 0px 5px;
+            width: 75%;
+            height: 230px;
+            line-height: 130px;
+            text-align: center;
+            text-shadow: 5px 5px 5px rgb(11, 14, 0);
+            background: linear-gradient(to right,#8e9c0c,#2c2b02);
+            font-family: 'Stalinist One', cursive;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="font-family: 'Holtwood One SC', serif;
+        font-size: 50px;text-shadow: 5px 5px 5px rgb(196, 248, 7);"> SON`S WEB</h1>
+        <h2 style="font-family: 'Diplomata SC', cursive;
+        font-size: 30px ;text-shadow: 2px 2px 3px rgb(196, 248, 7);"><u>Digital Clock</u></h2>
+    </center>
+    <div id="jamku"></div>
+    <script>
+        function TampilDigital(){
+            var tanggal = new Date();
+            var jam = tanggal.getHours();
+            var menit  = tanggal.getMinutes();
+            var detik =tanggal.getSeconds();
+            var sesi = "AM";
+            if(jam>12){
+                sesi = "PM";
+            }
+            var hari = " ";
+            if (sesi = "AM"){
+                if(jam >=1){ hari = "dini";}
+                if(jam < 11){hari = "pagi";}
+                if(jam > 11){hari = "siang";}}
+            if(sesi="PM"){
+                if(jam < 15){hari = "siang";}
+                if(jam > 15){hari = "sore";}
+                if(jam > 19){hari="malam"}
+            }
+                
+            if(jam == 0 ){
+                if(sesi =="PM"){
+                    jam == 12;
+                }
+            }
+            jam=(jam<10)?"0"+jam:jam;
+            menit=(menit<10)?"0"+menit:menit;
+            detik=(detik<10)?"0"+detik:detik;
+            var ang=new Array("","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan","sepuluh","sebelas");
+            var tbr1;
+            var jam = tanggal.getHours();
+            if(jam<12){tbr1=" "+ang[jam];}
+            if(jam<20 & jam >= 12){jam -= 12
+                tbr1 = ang[jam] ;}else
+            var angka=new Array("","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan","sepuluh","sebelas");
+            var tbr2;
+            var menit  = tanggal.getMinutes();
+            if(menit<12){menit2= menit
+                tbr2 = ang[menit2];}else
+            if(menit<20 & menit >=12 ){menit -= 10
+                tbr2 = ang[menit] +" belas";}else
+            if(menit<60 & menit >= 20){menit1 = Math.floor(menit/10)
+                menit2 = (menit%10)
+                tbr2 =ang[menit1]+" puluh "+ ang[menit2]
+                menit = menit;}else
+            var angk=new Array("","satu","dua","tiga","empat","lima","enam","tujuh","delapan","sembilan","sepuluh","sebelas");
+            var tbr3;
+            var detik =tanggal.getSeconds();
+            if(detik<12 ){
+                detik2 = detik
+                tbr3 = ang[detik2] }
+            if(detik<20 & detik>=12){detik -= 10
+                tbr3 = ang[detik] +" belas";}
+            if(detik<60 & detik >= 20){
+                    detik1 = Math.floor(detik/10)
+                detik2 = detik % 10
+                tbr3 = ang[detik1]+" puluh "+ ang[detik2]
+                detik = detik;}
+            var ket = "jam " + tbr1 + " lebih " + tbr2 + " menit " + tbr3 + " detik " + hari + " hari " 
+            document.getElementById('jamku').innerText=ket;
+            document.getElementById('jamku').textContent=ket;
+            setTimeout(TampilDigital,1000)
+        }
+        TampilDigital();
+    </script>
+</body>
+</html>

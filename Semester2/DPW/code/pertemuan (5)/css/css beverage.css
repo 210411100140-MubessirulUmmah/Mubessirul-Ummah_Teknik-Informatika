@@ -1,0 +1,16 @@
+p{
+    color: aliceblue;
+    background-color: black;
+    font-style: inherit;
+}
+h2{
+    background-color: rgb(138, 9, 73);
+    color: white;
+    background-clip: content-box;
+    font-family: sans-serif;
+    font-variant: small-caps;
+    border-bottom: 2px solid black;
+}
+p.greentea{
+    color: cadetblue;
+}

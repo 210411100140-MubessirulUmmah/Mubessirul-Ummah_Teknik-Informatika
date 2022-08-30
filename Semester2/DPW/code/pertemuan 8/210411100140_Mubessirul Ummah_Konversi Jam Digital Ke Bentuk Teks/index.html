@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jam Dan Tanggal Digital</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body onload="initClock()">
+    <table align="center">
+        <!--JUDUL-->
+        <tr>
+            <td>
+                <h1>APLIKASI KONVERSI JAM DIGITAL PADA BENTUK TEKS (Javasript)</h1>
+            </td>
+        </tr>
+
+
+        <!--PROGRAM JAM DIGITAL-->
+        <tr>
+            <td align="center">
+                <img src="Image/—Pngtree—watch alarm clock neon light_6670048.png">
+                <img src="Image/—Pngtree—watch alarm clock neon light_6670048.png">
+                <img src="Image/—Pngtree—watch alarm clock neon light_6670048.png">
+                <img src="Image/—Pngtree—watch alarm clock neon light_6670048.png">
+                <img src="Image/—Pngtree—watch alarm clock neon light_6670048.png">
+                <img src="Image/—Pngtree—watch alarm clock neon light_6670048.png">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <h4>Create by : @mubessirul_ummah1001</h4>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td><h3>Waktu Menunjukkan Pukul :</h3><br></td>
+        </tr>
+        <tr>
+            <td align="center">
+                <!--digital clock start-->
+                <div class="datetime">
+                    <div class="date">
+                        <span id="dayname">Day</span>,
+                        <span id="month">Month</span>
+                        <span id="daynum">00</span>,
+                        <span id="year">Year</span>
+                    </div>
+                    <div class="time">
+                        <span id="hour">00</span>:
+                        <span id="minutes">00</span>:
+                        <span id="seconds">00</span>
+                        <span id="pe">Pagi Hari</span>
+                    </div>
+                </div>
+                <!--digital clock end-->
+                <script type="text/javascript">
+                    function updateClock(){
+                        var now = new Date();
+                        var dname = now.getDay();
+                        var mo = now.getMonth();
+                        var dnum = now.getDate();
+                        var yr = now.getFullYear();
+                        var hou = now.getHours();
+                        var min = now.getMinutes();
+                        var sec = now.getSeconds();
+                        var pe = "pagi hari";
+                            if(hou <=3){pe = "dini hari";}
+                            if(hou <=3 && hou <= 10){pe = "pagi hari";}
+                            if(hou <=3 && hou <= 10 && hou >= 11){pe = "siang hari";}
+                            if(hou <=3 && hou <= 10 && hou >= 11 && hou <= 17){pe = "sore hari";}
+                            if(hou <=3 && hou <= 10 && hou >= 11 && hou <= 17 && hou > 17){pe= "malam hari";}
+    
+                            Number.prototype.pad = function(digits){
+                                for(var n = this.toString(); n.length < digits; n = 0 + n);
+                                return n;
+                            }
+    
+                            var months = ["January","February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+                            var week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday"];
+                            var ids = ["dayname", "month", "daynum", "year", "hour", "minutes", "seconds", "pe"];
+                            var values = [week[dname], [months[mo]], dnum.pad(2), yr, hou.pad(2), min.pad(2), sec.pad(2), pe];
+                            for(var i = 0; i < ids.length; i++)
+                            document.getElementById(ids[i]).firstChild.nodeValue = values[i]
+                    }    
+    
+                    function initClock(){
+                        updateClock;
+                        window.setInterval("updateClock()",1)
+                    }
+                    </script>
+            </td>
+        </tr>
+
+
+
+        <!--PROGRAM JAM DIGITAL 2-->
+        <tr>
+            <td align="center">
+                <br>
+                <div class="ket_waktu">
+                    <span id="jam">00</span>:
+                    <span id="menit">00</span>:
+                    <span id="detik">00</span>:
+                    <span id="periode">AM</span>
+                </div>
+                <script>
+                Number.prototype.pad = function(digits){
+                        for(var n = this.toString(); n.length < digits; n = 0 + n);
+                        return n;
+                    }
+                window.setTimeout("waktu()", 1);
+            
+                function waktu() {
+                    var waktu = new Date();
+                        window.setTimeout("waktu()", 1);
+                        jam = waktu.getHours(),
+                        menit = waktu.getMinutes(),
+                        detik= waktu.getSeconds(),
+                        periode = "AM";
+
+                        if(jam == 0){
+                            jam = 12;
+                        }
+                        if(jam > 12){
+                            jam = jam - 12;
+                            periode = "PM";
+                        }
+                        Number.prototype.pad = function(digits){
+                        for(var n = this.toString(); n.length < digits; n = 0 + n);
+                        return n;
+                        }
+                    var ket = ["jam", "menit", "detik", "periode"];
+                    var value = [jam.pad(2), menit.pad(2), detik.pad(2), periode];
+                    for(var i = 0; i < ket.length; i++)
+                    document.getElementById(ket[i]).firstChild.nodeValue = value[i]
+                }
+                </script>
+            </td>
+        </tr>
+
+
+
+
+        <!--PROGRAM KONVERSI ANGKA PADA JAM MENJADI TEKS-->
+        <tr>
+            <td align="center">
+                <div class="content">
+                    <p>
+                        <div class="item"><p id="jam"></p></div>
+                        <div class="item"><p id="menit"></p></div>
+                        <div class="item"><p id="detik"></p></div>
+                        <div class="item-c"><p id="convert"></p></div>
+                    </p>
+                </div>
+                <script>
+                    function startTime() {
+                    var today = new Date();
+                    setTimeout(startTime,1000);
+                    var jam1 = today.getHours();
+                    var menit1 = today.getMinutes();
+                    var detik1 = today.getSeconds();
+                    var per = "pagi hari";
+                        if(jam1 <=3){per = "dini hari";}
+                        if(jam1 <=3 && jam1 <= 10){per = "pagi hari";}
+                        if(jam1 <=3 && jam1 <= 10 && jam1 >= 11){per = "siang hari";}
+                        if(jam1 <=3 && jam1 <= 10 && jam1 >= 11 && jam1 <= 17){per = "sore hari";}
+                        if(jam1 <=3 && jam1 <= 10 && jam1 >= 11 && jam1 <= 17 && jam1 > 17){per = "malam hari";}
+                            
+                    document.getElementById("convert").innerHTML = ("Jam " + convertHourToName(jam1) + " Lebih " + convertNumberToName(menit1) + " Menit " + convertNumberToName(detik1) + " Detik ")+""+per+"";
+                    
+                }
+
+                function checkTime(i) {
+                    if (i < 10) {
+                        i = "0" + i;
+                    }
+                    return i;
+                } 
+
+                function convertHourToName(num) {
+                    if (num > 12) {
+                        num -= 12;
+                    }
+                    return convertNumberToName(num);
+                }
+                function convertNumberToName(num) {
+                    var lowNames =  ["Nol", "Satu", "Dua", "Tiga", "Empat", "Lima", "Enam", "Tujuh", "Delapan", "Sembilan", "Sepuluh",
+                                    "Sebelas", "Dua Belas", "Tiga Belas", "Empat Belas", "Lima Belas", "Enam Belas", "Tujuh Belas", "Delapan Belas", "Sembilan Belas"];
+                    var tensNames = ["Dua Puluh", "Tiga Puluh", "Empat Puluh", "Lima Puluh", "Enam Puluh", "Tujuh Puluh", "Delapan Puluh", "Sembilan Puluh"];
+                    var tens, ones, result;
+                    if (num < lowNames.length) {
+                        result = lowNames[num];
+                    } else {
+                        tens = Math.floor(num / 10);
+                        ones = num % 10;
+                        if (tens <= 9) {
+                            result = tensNames[tens - 2];
+                            if (ones > 0) {
+                                result += " " + lowNames[ones];
+                            }
+                        } else {
+                            result = "unknown"
+                        }
+                    }
+                    return result;
+                }
+
+                startTime();
+                </script>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
