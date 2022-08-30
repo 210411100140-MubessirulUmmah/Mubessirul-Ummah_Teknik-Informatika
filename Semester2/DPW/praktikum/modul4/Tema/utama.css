@@ -1,0 +1,372 @@
+body{
+    background-image: url("../Sumberdaya/cropped-1-Logo-UTM-Baru-300x300.png");
+    overflow:scroll;
+}
+
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(17, 82, 94);
+    padding: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 3px white solid;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    margin-right: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar label{
+    display: none;
+}
+@media screen and
+(max-width: 600px){
+    .menu{
+        width: 10%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
+
+
+
+div.bg{
+    background-image: url("../Sumberdaya/rooftop\ sketch\,\ jason\ scheier.jfif");
+    background-size: cover;
+    border: 3px white solid;
+    height: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 0px;
+    filter: blur(0.2px);
+}
+
+
+div.bungkus{
+    background-color: rgb(255, 250, 176);
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    border:0px;
+    background-size: cover;
+}
+
+
+a{
+    color: #fff;
+    font-family: cursive;
+    font-weight: 800;
+}
+
+
+.button{
+    background-color: maroon;
+    box-shadow: #031116 4px 4px 0px;
+    border-radius: 10px;
+    transition: transform 200ms, box-shadow
+    200ms;
+}
+.button:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #fff 0px 0px 0px;
+}
+.button2{
+    background-color: rgb(7, 120, 139);
+    box-shadow: #586c74 4px 4px 0px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow
+    200ms;
+}
+.button2:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #fff 0px 0px 0px;
+}
+
+
+.list{
+    list-style: none;
+    text-align: center;
+}
+.link{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.link::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+.link:hover::after{
+    transform: scaleX(1);
+}
+
+
+.paragraf1{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+    font-family: "arial";
+    text-indent: 5%;
+    color: maroon;
+}
+.halohalo{
+    text-align: left;
+    color: maroon;
+    margin-left: 15px;
+}
+.paragraf2{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+    font-family: "tahoma";
+    text-indent: 5%;
+    color: green;
+}
+.paragraf3{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+    font-family: "Times New Roman";
+    text-indent: 5%;
+    color: blue;
+}
+.paragraf4{
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: justify;
+    font-family: "Times New Roman";
+    text-indent: 5%;
+    color: orange;
+}
+
+
+.welcome{
+    text-align: center;
+    color: white;
+    font-variant: small-caps;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size:20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.titik{
+    text-align: center;
+    color: white;
+    font-size:30px;
+}
+.salam{
+    text-align: center;
+    color: white;
+    overflow:hidden;
+    font-size: 20px;
+}
+
+
+.foto{
+    width :250px;
+    height: 320px;
+    background-color: #333;
+    border-radius: 15px;
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -10px;
+    box-shadow: 3px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+.foto-image{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+    transition: transform .75s;
+}
+.foto:hover .foto-image{
+    transform: scale(1.15);
+}
+.foto-title{
+    position: absolute;
+    color: white;
+    left: 15px;
+    bottom: 15px;
+    font-size: 30px;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+}
+
+
+
+.desa-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    perspective: 800px;
+}
+.card{
+    width: 300px;
+    height: 200px;
+    transform-style:preserve-3d;
+    position: relative;
+    transition: transform .75s
+    cubic-bezier(0.4, 0.33, 0.5, 0.9);
+}
+.card__image{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    object-fit: cover;
+    outline: 2px solid rgb(0, 0, 0);
+    outline-offset: 5px;
+    backface-visibility: hidden;
+}
+.card__image:nth-child(2),
+.card:hover{
+    transform: rotate3d(1,1,0, 180deg);
+}
+
+
+
+
+
+.location-image {
+    line-height: 0;
+}
+.location-listing {
+    position: relative;
+  }
+.location-listing:hover .location-title {
+    opacity: 1;
+}
+.location-image img {
+    filter: blur(0px);
+    transition: filter 0.3s ease-in;
+}
+.location-listing:hover .location-image img {
+    filter: blur(2px);
+}
+
+
+
+
+.foto-rumah{
+    width :350px;
+    height: 250px;
+    background-color: #333;
+    border-radius: 15px;
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -10px;
+    box-shadow: 3px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    left: 72%;
+    margin-right: 15px;
+}
+.foto-keluarga{
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    transition: transform .75s;
+}
+.foto-rumah:hover .foto-keluarga{
+    transform: scale(1.15);
+}
+
+
+
+
+.foto-rumah2{
+    width :250px;
+    height: 320px;
+    background-color: #333;
+    border-radius: 15px;
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -10px;
+    box-shadow: 3px rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.foto-keluarga2{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+    transition: transform .75s;
+}
+.foto-rumah2:hover .foto-keluarga2{
+    transform: scale(1.15);
+}
+
+div.etc{
+    background-color: rgb(17, 82, 94);
+    padding: 15px;
+    margin-top: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 3px white solid;
+}
+.etc table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.etc h3{
+    color: #fff;
+    text-align: center;
+}
+
+.etc li{
+    margin-inline: 10px;
+}

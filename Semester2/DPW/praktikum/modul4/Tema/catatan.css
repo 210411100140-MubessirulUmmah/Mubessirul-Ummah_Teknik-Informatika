@@ -1,0 +1,205 @@
+/*BACKGROUND LOGO UTM*/
+body{
+    background-image: url("../Sumberdaya/cropped-1-Logo-UTM-Baru-300x300.png");
+    overflow:scroll;
+}
+
+/*BUNGKUS JUDUL*/
+div.bg{
+    background-image: url("../Sumberdaya/Sunset\ _\ pasoputi.jfif");
+    background-size: cover;
+    padding: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border-radius: 0px;
+    border: 3px white solid;
+}
+.bg h1{
+    text-align: center;
+    font-family: "Cooper Black";
+    color: #fff;
+}
+.bg h2{
+    text-align: center;
+    color: #fff;
+}
+.bg p{
+    text-align: center;
+    color: #fff;
+    font-size: large;
+}
+.bg table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg h4{
+    text-align: center;
+}
+.bg a{
+    color: #fff;
+}
+.bg li{
+    margin-inline: 10px;
+}
+
+
+/*NAVBAR*/
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(30, 23, 119);
+    padding: 15px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 3px white solid;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    margin-right: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar label{
+    display: none;
+}
+@media screen and
+(max-width: 600px){
+    .menu{
+        width: 10%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
+
+/*TOMBOL LINK*/
+.button{
+    background-color: rgb(24, 77, 173);
+    box-shadow: #b4b4b4 4px 4px 0px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow
+    200ms;
+}
+.button:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #fff 0px 0px 0px;
+}
+
+/*LINK HALAMAN LAIN*/
+div.etc{
+    background-color: rgb(30, 23, 119);
+    padding: 15px;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border: 3px white solid;
+}
+.etc table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.etc h3{
+    color: #fff;
+    text-align: center;
+}
+.etc li{
+    margin-inline: 10px;
+}
+
+
+
+/*BUNGKUS ISI*/
+div.bgisi{
+    background-color: #ECFFF4;
+    border: 0.1px black solid;
+    padding: 15px;
+    margin-top: 0px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 0px;
+    border:0px;
+    border: 3px white solid;
+}
+.bgisi h1{
+    text-align: center;
+}
+.bgisi p{
+    text-align: center;
+}
+.bgisi table{
+    width: 90%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*CSS ISI*/
+.paragraf p{
+    text-align: justify;
+    text-indent: 5%;
+}
+a{
+    color: #fff;
+    font-family:cursive;
+    font-weight: 800;
+}
+
+
+/*CSS LINK*/
+.list{
+    list-style: none;
+    text-align: center;
+}
+.link{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.link::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+.link:hover::after{
+    transform: scaleX(1);
+}

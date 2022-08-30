@@ -1,0 +1,90 @@
+/*background logo utm*/
+body{
+    background-image: url("../../../Sumberdaya/cropped-1-Logo-UTM-Baru-300x300.png");
+}
+
+/*bungkus isi*/
+.bungkus{
+    margin: 50px;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+/*BACKGROUND HEADER*/
+header{
+    padding: 10px;
+    text-align: right;
+}
+    
+/*MENU*/
+.background ul li {
+    display: inline-block;
+}
+    
+.background ul li a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 5px 20px;
+    margin: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+    background-color: #eeff00;
+}
+    
+ul li a:hover {
+    background-color: #ffffff;
+    border: 2px solid #000000;
+}
+    
+ul li.aktif a{
+    background-color: #626d85;
+    color: white;
+}
+
+/*bungkus isi*/
+.judul{
+    background-image: url("../../../Sumberdaya/image/bgsd.jpg");
+    height: 200px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+.judul h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #cdebfc;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+}
+
+/*css isi*/
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #000000;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+img{
+    border-radius: 30px;
+}
+
+/*link balik riwayat*/
+.kembali{
+    text-align: center;
+}
+.kembali a{
+    border: 3px black solid;
+    color: #ffffff;
+    background-color: #626d85;
+    border-radius: 30px;
+    font-weight: bold;
+    padding: 5px 20px;
+    margin: 50px;
+    text-decoration: none; 
+    display: inline-block;
+}
