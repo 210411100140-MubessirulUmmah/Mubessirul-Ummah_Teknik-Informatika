@@ -1,0 +1,236 @@
+body{
+    background-image: url("../Sumberdaya/What\ Are\ You\ Working\ \ On_\ 2015!!!\ -\ Page\ 71.jfif");
+    overflow:scroll;
+}
+
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(117, 29, 56);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 3px white solid;
+}
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo{
+    margin-right: 50px;
+}
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+#toggler,
+.navbar label{
+    display: none;
+}
+@media screen and
+(max-width: 600px){
+    .menu{
+        width: 10%;
+        max-height: 0;
+        overflow: hidden;
+    }
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+}
+
+.list{
+    list-style: none;
+    text-align: center;
+}
+.link{
+    display: inline-block;
+    margin-block: 2px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.link::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .25s ease;
+}
+.link:hover::after{
+    transform: scaleX(1);
+}
+
+
+a{
+    color: #fff;
+    font-family: cursive;
+    font-weight: 800;
+}
+.button{
+    background-color: rgb(199, 39, 105);
+    box-shadow: #b4b4b4 4px 4px 0px;
+    border-radius: 8px;
+    transition: transform 200ms, box-shadow
+    200ms;
+}
+.button:active{
+    transform: translateY(4px) translateX(4px);
+    box-shadow: #fff 0px 0px 0px;
+}
+
+
+
+div.bg{
+    background-image: url("../Sumberdaya/What\ Are\ You\ Working\ \ On_\ 2015!!!\ -\ Page\ 71.jfif");
+    background-size: cover;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 3px white solid;
+}
+.bg h1{
+    text-align: center;
+    color: #fff;
+    font-family: "Cooper Black";
+}
+.bg h2{
+    text-align: center;
+    color: #fff;
+}
+.bg p{
+    text-align: center;
+    color: #fff;
+    font-size: large;
+}
+.bg table{
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg h4{
+    text-align: center;
+}
+
+
+
+
+div.etc{
+    background-color: rgb(117, 29, 56);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    border: 3px white solid;
+}
+.etc h3{
+    color: #fff;
+    text-align: center;
+}
+.etc table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+div.datadiri{
+    background-image: url("../Sumberdaya/What\ Are\ You\ Working\ \ On_\ 2015!!!\ -\ Page\ 71.jfif");
+    background-size: cover;
+}
+.datadiri h2{
+    text-align: center;
+}
+
+
+
+
+div.bgdatadiri{
+    background-color: white;
+    border: 0.1px black solid;
+    opacity: 0.6;
+}
+
+
+
+div.bgisi{
+    border: 0.1px black solid;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 30px;
+    background-color: #F3DFF6;
+}
+.bgisi img{
+    border:2px black solid;
+    width: 200px;
+}
+.bgisi .gambar img{
+    border :3px rgb(151, 51, 51) solid;
+}
+.icons img{
+    border:none;
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    perspective: 800px;
+}
+.bgisi p{
+    text-align: center;
+    text-align: justify;
+    text-indent: 5%;
+}
+.bgisi h1{
+    text-align: center;
+}
+.bgisi h4{
+    text-align: center;
+}
+.bgisi table{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.bgisi h2{
+    text-align: center;
+}
+
+
+
+.kotak h4{
+    text-align: justify;
+    text-align: center;
+    color: black;
+}
+.kotak p{
+    text-align: center;
+    color: #fff;
+}
+.kotak td{
+    align-items: center;
+    background-color: rgb(223, 120, 141);
+}
+
+
+
+
+
