@@ -1,0 +1,70 @@
+body{
+    background-image: url("Scenic [3840x2160].png");
+}
+table{
+    margin: auto;
+}
+div.edit{
+    background-color: blanchedalmond;
+    background-size: cover;
+    width: 700px;
+    height: 300px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 30px;
+    border: 3px white solid;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+}
+.atur {
+    display:flex;
+    align-items:center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+.komen{
+        border: 1px black solid;
+        width: 1000px;
+        align-items:center;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        margin: 0 auto;
+        background-color: white;
+        font-family: 'Courier New', Courier, monospace;
+}
+    label{
+    font-size: 25px;
+    color: rgb(24, 41, 41);
+    font-family: Perpetua;
+    margin-right: 10px;
+}
+.titik::before{
+    content: ":";
+    margin-right: 18px;
+}
+.simpan{
+    color: white;
+    background-color: greenyellow;
+    border: 1px solid greenyellow;
+    padding: 2px 2px;
+    border-radius: 10px;
+    color: black;
+    margin-top: 20px;
+    width: 100px;
+    height: 25px;
+    margin-bottom: 20px;
+    outline: 1.9px solid greenyellow;
+    outline-offset: 0.2rem;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #0a98c0;
+    font-size: 14px;
+    margin-bottom: 15px;
+    padding: 0.5em 1em 0.5em 0;
+}
