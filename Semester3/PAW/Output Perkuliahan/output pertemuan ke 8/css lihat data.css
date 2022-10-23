@@ -1,0 +1,110 @@
+/* Lihat Data */
+body{
+    background-color:rgb(241, 241, 190);
+}
+table{
+    border: 1px solid rgb(177, 165, 148); 
+}
+
+td{
+    background-color: white;
+}
+
+th{
+    background-color: lightgreen;
+    text-align: center;
+}
+
+button{
+    width: 65px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+button:hover{
+  background-color: aquamarine;
+}
+.add button{
+    width: fit-content;
+    padding: 8px 10px;
+    margin-bottom: 2vh;
+    font-weight: bold;
+}
+
+h2{
+    margin-top: 10vh;
+    font-weight: bold;
+}
+h2,p{
+    text-align: center;
+}
+.keterangan{
+    margin-bottom: 5vh;
+    font-weight: bold;
+}
+
+
+
+
+/* navbar */
+.navbar{
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+nav{
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(68, 221, 76), rgb(113, 169, 206));
+  }
+  nav .wrapper{
+    position: relative;
+    max-width: 1300px;
+    padding: 0px 30px;
+    height: 70px;
+    line-height: 70px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .wrapper .logo a{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .wrapper .nav-links{
+    display: inline-flex;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 9px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .wrapper .btn{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+  img{
+    width: 40px;
+    margin-top: -15px;
+    margin-right: 5px;
+  }
+  .gambar{
+    margin-top: 20px;
+  }
+
+tr:hover{
+  background-color: rgb(0, 0, 0);
+}
+
