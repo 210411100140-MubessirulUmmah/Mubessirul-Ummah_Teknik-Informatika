@@ -1,7 +1,7 @@
 <div class="tengah">
     <div class="footer">
         <div class="foot1">
-            <img src="Sumberdaya/UTM.png" alt="foto UTM"><br>
+            <img src="{{url('Sumberdaya/UTM.png')}}" alt="foto UTM"><br>
             <h4>Jurursan Teknik Informatika<br>Universitas Trunojoyo Madura</h4>
             <p>Jl.Raya.Telang, Kecamatan Kamal, Bangkalan<br>69162 Indonesia<br>Kampus Universitas Trunojoyo Madura</p>
         </div>
